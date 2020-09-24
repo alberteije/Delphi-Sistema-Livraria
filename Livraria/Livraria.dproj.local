@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/01/28 10:29:51.750.pas,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.pas=C:\Projetos\Livraria\Unit1.pas</Transaction>
+    <Transaction>2015/01/28 10:29:51.750.dfm,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Unit1.dfm=C:\Projetos\Livraria\Unit1.dfm</Transaction>
+    <Transaction>2015/01/28 10:30:02.796.dproj,C:\Documents and Settings\Eije\Meus documentos\RAD Studio\Projects\Project1.dproj=C:\Projetos\Livraria\Livraria.dproj</Transaction>
+    <Transaction>2015/01/28 11:38:05.170.pas,C:\Projetos\Livraria\Unit1.pas=</Transaction>
+    <Transaction>2015/01/28 11:38:05.170.dfm,C:\Projetos\Livraria\Unit1.dfm=</Transaction>
+    <Transaction>2015/01/28 11:40:05.071.pas,C:\Projetos\Livraria\UMenu.pas=</Transaction>
+    <Transaction>2015/01/28 11:40:05.071.dfm,C:\Projetos\Livraria\UMenu.dfm=</Transaction>
+    <Transaction>2015/01/28 11:40:05.121.pas,C:\Projetos\Livraria\UBase.pas=</Transaction>
+    <Transaction>2015/01/28 11:40:05.121.dfm,C:\Projetos\Livraria\UBase.dfm=</Transaction>
+    <Transaction>2015/01/29 11:33:25.461.pas,C:\Projetos\Livraria\U_PegaItens.pas=</Transaction>
+    <Transaction>2015/01/29 11:33:25.461.dfm,C:\Projetos\Livraria\U_PegaItens.dfm=</Transaction>
+    <Transaction>2015/01/30 18:04:20.113.pas,C:\Projetos\Livraria\U_Duplicata.pas=</Transaction>
+    <Transaction>2015/01/30 18:04:20.113.dfm,C:\Projetos\Livraria\U_Duplicata.dfm=</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,211 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{E6BB1907-E6AF-433D-BDEC-002B2B28A423}</ProjectGuid>
+			<ProjectVersion>12.0</ProjectVersion>
+			<MainSource>Livraria.dpr</MainSource>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<DCC_UnitAlias>WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;$(DCC_UnitAlias)</DCC_UnitAlias>
+			<DCC_DependencyCheckOutputName>Livraria.exe</DCC_DependencyCheckOutputName>
+			<DCC_ImageBase>00400000</DCC_ImageBase>
+			<DCC_Platform>x86</DCC_Platform>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+			<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+			<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+			<DCC_DebugInformation>false</DCC_DebugInformation>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		</PropertyGroup>
+		<ItemGroup>
+			<DelphiCompile Include="Livraria.dpr">
+				<MainSource>MainSource</MainSource>
+			</DelphiCompile>
+			<DCCReference Include="UBase.pas">
+				<Form>FBase</Form>
+			</DCCReference>
+			<DCCReference Include="UMenu.pas">
+				<Form>FMenu</Form>
+			</DCCReference>
+			<DCCReference Include="U_Dados.pas">
+				<Form>F_Dados</Form>
+				<DesignClass>TDataModule</DesignClass>
+			</DCCReference>
+			<DCCReference Include="U_Clientes.pas">
+				<Form>F_Clientes</Form>
+			</DCCReference>
+			<DCCReference Include="Biblioteca.pas"/>
+			<DCCReference Include="ULogin.pas">
+				<Form>FLogin</Form>
+			</DCCReference>
+			<DCCReference Include="U_Fornecedores.pas">
+				<Form>F_Fornecedores</Form>
+			</DCCReference>
+			<DCCReference Include="U_Funcionarios.pas">
+				<Form>F_Funcionarios</Form>
+			</DCCReference>
+			<DCCReference Include="U_Unidades.pas">
+				<Form>F_Unidades</Form>
+			</DCCReference>
+			<DCCReference Include="U_Livros.pas">
+				<Form>F_Livros</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaUnd2.pas">
+				<Form>F_PegaUnd2</Form>
+			</DCCReference>
+			<DCCReference Include="U_Produtos.pas">
+				<Form>F_Produtos</Form>
+			</DCCReference>
+			<DCCReference Include="U_Particulares.pas">
+				<Form>F_Particulares</Form>
+			</DCCReference>
+			<DCCReference Include="U_Bancos.pas">
+				<Form>F_Bancos</Form>
+			</DCCReference>
+			<DCCReference Include="U_Departamentos.pas">
+				<Form>F_Departamentos</Form>
+			</DCCReference>
+			<DCCReference Include="U_Orcamento.pas">
+				<Form>F_Orcamento</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaColegio.pas">
+				<Form>F_PegaColegio</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaProdutos.pas">
+				<Form>F_PegaProd</Form>
+			</DCCReference>
+			<DCCReference Include="U_Precos.pas">
+				<Form>F_Precos</Form>
+			</DCCReference>
+			<DCCReference Include="U_Soma.pas">
+				<Form>F_Soma</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaProd1.pas">
+				<Form>F_PegaProd1</Form>
+			</DCCReference>
+			<DCCReference Include="U_NC.pas">
+				<Form>F_NC</Form>
+			</DCCReference>
+			<DCCReference Include="U_Contas.pas">
+				<Form>F_Contas</Form>
+			</DCCReference>
+			<DCCReference Include="U_DadosNF.pas">
+				<Form>F_DadosNF</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaForn1.pas">
+				<Form>F_PegaForn1</Form>
+			</DCCReference>
+			<DCCReference Include="U_Outros.pas">
+				<Form>F_Outros</Form>
+			</DCCReference>
+			<DCCReference Include="U_Cheques.pas">
+				<Form>F_Cheques</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaConta.pas">
+				<Form>F_PegaConta</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaBanco2.pas">
+				<Form>F_PegaBanco2</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaBanco.pas">
+				<Form>F_PegaBanco</Form>
+			</DCCReference>
+			<DCCReference Include="U_PegaForn.pas">
+				<Form>F_PegaForn</Form>
+			</DCCReference>
+			<DCCReference Include="U_aReceber.pas">
+				<Form>F_aReceber</Form>
+			</DCCReference>
+			<DCCReference Include="U_NFEntrada.pas">
+				<Form>F_NFEntrada</Form>
+			</DCCReference>
+			<DCCReference Include="U_Ajusta.pas">
+				<Form>F_Ajusta</Form>
+			</DCCReference>
+			<DCCReference Include="U_NivelAcesso.pas">
+				<Form>F_NivelAcesso</Form>
+			</DCCReference>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+		<ProjectExtensions>
+			<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Delphi.Personality>
+					<Source>
+						<Source Name="MainSource">Livraria.dpr</Source>
+					</Source>
+					<Parameters>
+						<Parameters Name="UseLauncher">False</Parameters>
+						<Parameters Name="LoadAllSymbols">True</Parameters>
+						<Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+					</Parameters>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1046</VersionInfo>
+						<VersionInfo Name="CodePage">1252</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\synapse.bpl">Synapse TCP/IP / Serial library (http://www.synapse.ararat.cz)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\PCN2.bpl">Projeto Cooperar (http://br.groups.yahoo.com/group/projeto_cooperar_nfe/)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\ACBrCapicom.bpl">ACBr Automação Comercial Brasil  ACBrComum   (http://acbr.sf.ne)</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\rxdb140.bpl">RX Library DB Component Package</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\rxctl140.bpl">RX Library Component and Tools Package</Excluded_Packages>
+						<Excluded_Packages Name="C:\Documents and Settings\All Users\Documentos\RAD Studio\7.0\Bpl\RSP.bpl">RSPrint FREE - Impressão em impressoras Matriciais, Jato e Laser</Excluded_Packages>
+					</Excluded_Packages>
+				</Delphi.Personality>
+				<ModelSupport>False</ModelSupport>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+	</Project>
